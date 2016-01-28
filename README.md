@@ -1,2 +1,2 @@
-# work_cerve
-Code repository for statistical analisys
+# cerve_work
+Code repository for statistical analisys 

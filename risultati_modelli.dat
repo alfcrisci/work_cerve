@@ -1,0 +1,141 @@
+## Media temperatura collare
+
+Call:
+glm(formula = tmediar ~ dist + bosco + tmina + tmeda + deltmac + 
+    deltmed + altcmax + delqmax, data = na.omit(matcerve_purged_tmediar))
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-4.619e-14  -2.664e-14  -2.132e-14  -1.776e-14   3.553e-15  
+
+Coefficients:
+              Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)  4.179e-14  5.984e-15  6.983e+00 3.15e-12 ***
+dist2       -6.388e-15  8.266e-16 -7.727e+00 1.25e-14 ***
+dist3        2.791e-15  1.112e-15  2.510e+00   0.0121 *  
+bosco2      -4.463e-15  8.925e-16 -5.001e+00 5.86e-07 ***
+bosco3      -5.524e-15  9.210e-16 -5.998e+00 2.10e-09 ***
+tmina       -1.771e-15  2.256e-16 -7.847e+00 4.91e-15 ***
+tmeda        1.000e+00  2.109e-16  4.742e+15  < 2e-16 ***
+deltmac      5.149e-16  8.382e-17  6.143e+00 8.53e-10 ***
+deltmed      1.000e+00  1.986e-16  5.036e+15  < 2e-16 ***
+altcmax2    -1.398e-15  5.696e-15 -2.450e-01   0.8062    
+altcmax3    -1.230e-15  5.704e-15 -2.160e-01   0.8293    
+delqmax2     1.774e-16  1.303e-15  1.360e-01   0.8917    
+delqmax3    -2.691e-16  5.716e-15 -4.700e-02   0.9625    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 5.084851e-28)
+
+    Null deviance: 2.5084e+05  on 6939  degrees of freedom
+Residual deviance: 3.5223e-24  on 6927  degrees of freedom
+AIC: -416442
+
+Number of Fisher Scoring iterations: 1
+
+
+## Temperature massima al collare
+
+
+Call:
+glm(formula = tmaxr ~ animale + dist + tmina + tmaxa + tmeda + 
+    deltmin + deltmac + deltmed + altcmin + altcmax + altcmed + 
+    delqmed + delqmax + delqmin, data = na.omit(matcerve_purged_tmaxr))
+
+Deviance Residuals: 
+      Min         1Q     Median         3Q        Max  
+1.172e-13  1.990e-13  2.274e-13  2.558e-13  3.269e-13  
+
+Coefficients:
+              Estimate Std. Error    t value Pr(>|t|)    
+(Intercept) -2.207e-13  7.815e-14 -2.824e+00 0.004760 ** 
+animale5989 -1.541e-14  1.328e-14 -1.160e+00 0.246012    
+animale5990  5.464e-14  2.384e-14  2.292e+00 0.021948 *  
+animale5991  9.041e-14  1.244e-14  7.269e+00 4.02e-13 ***
+animale5992  2.620e-14  2.220e-14  1.180e+00 0.237906    
+animale5993  6.856e-14  2.720e-14  2.521e+00 0.011722 *  
+animale5994 -5.246e-14  2.614e-14 -2.007e+00 0.044799 *  
+animale5995 -2.262e-16  2.485e-14 -9.000e-03 0.992738    
+animale5996  5.395e-14  1.640e-14  3.290e+00 0.001007 ** 
+animale5997  2.714e-14  2.565e-14  1.058e+00 0.289935    
+animale5999  3.129e-15  2.414e-14  1.300e-01 0.896859    
+animale6000  2.658e-14  2.446e-14  1.087e+00 0.277269    
+dist2       -3.723e-14  1.039e-14 -3.583e+00 0.000342 ***
+dist3       -1.421e-14  1.843e-14 -7.710e-01 0.440913    
+tmina       -3.274e-14  4.966e-14 -6.590e-01 0.509688    
+tmaxa        1.000e+00  4.969e-14  2.012e+13  < 2e-16 ***
+tmeda        5.564e-14  9.923e-14  5.610e-01 0.574999    
+deltmin     -2.455e-15  2.259e-15 -1.087e+00 0.277287    
+deltmac      1.000e+00  1.038e-15  9.633e+14  < 2e-16 ***
+deltmed      3.751e-15  3.564e-15  1.052e+00 0.292632    
+altcmin2    -3.750e-15  1.114e-13 -3.400e-02 0.973133    
+altcmin3    -8.022e-15  1.209e-13 -6.600e-02 0.947083    
+altcmax2     6.403e-15  8.195e-14  7.800e-02 0.937729    
+altcmax3     6.002e-15  8.359e-14  7.200e-02 0.942766    
+altcmed2     1.046e-14  1.022e-13  1.020e-01 0.918470    
+altcmed3     5.654e-15  1.167e-13  4.800e-02 0.961367    
+delqmed2    -4.628e-15  7.818e-14 -5.900e-02 0.952794    
+delqmed3    -1.028e-14  1.209e-13 -8.500e-02 0.932230    
+delqmax2    -2.399e-17  1.398e-14 -2.000e-03 0.998631    
+delqmax3     4.080e-15  8.274e-14  4.900e-02 0.960671    
+delqmin2    -4.329e-15  8.171e-14 -5.300e-02 0.957747    
+delqmin3     2.515e-15  1.168e-13  2.200e-02 0.982830    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 5.288395e-26)
+
+    Null deviance: 3.9796e+05  on 6939  degrees of freedom
+Residual deviance: 3.6532e-22  on 6908  degrees of freedom
+AIC: -384191
+
+Number of Fisher Scoring iterations: 1
+
+## Temperature minima al collare
+
+
+Call:
+glm(formula = tminr ~ stagione + bosco + tmina + tmaxa + tmeda + 
+    deltmin + deltmac + deltmed + altcmax + altcmed + delqmed + 
+    delqmax + oreluce, data = na.omit(matcerve_purged_tminr))
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-6.040e-14  -3.553e-14  -2.487e-14  -1.776e-15   3.941e-14  
+
+Coefficients:
+              Estimate Std. Error    t value Pr(>|t|)    
+(Intercept) -2.800e-14  8.046e-15 -3.480e+00 0.000505 ***
+stagione2    3.141e-14  1.585e-15  1.982e+01  < 2e-16 ***
+stagione3    5.883e-14  2.074e-15  2.837e+01  < 2e-16 ***
+stagione4    4.639e-14  1.253e-15  3.703e+01  < 2e-16 ***
+bosco2      -3.776e-15  1.104e-15 -3.421e+00 0.000628 ***
+bosco3      -4.100e-16  1.150e-15 -3.560e-01 0.721528    
+tmina        1.000e+00  6.092e-15  1.642e+14  < 2e-16 ***
+tmaxa       -3.830e-16  6.093e-15 -6.300e-02 0.949879    
+tmeda        1.854e-15  1.216e-14  1.520e-01 0.878847    
+deltmin      1.000e+00  2.764e-16  3.618e+15  < 2e-16 ***
+deltmac      1.442e-16  1.239e-16  1.164e+00 0.244480    
+deltmed     -4.263e-16  4.415e-16 -9.660e-01 0.334266    
+altcmax2     1.781e-16  7.134e-15  2.500e-02 0.980082    
+altcmax3     2.642e-16  7.109e-15  3.700e-02 0.970359    
+altcmed2    -1.608e-17  1.568e-15 -1.000e-02 0.991819    
+altcmed3    -2.375e-17  2.018e-15 -1.200e-02 0.990610    
+delqmed2    -1.111e-16  1.856e-15 -6.000e-02 0.952267    
+delqmed3     9.397e-17  2.800e-15  3.400e-02 0.973227    
+delqmax2    -4.399e-17  1.632e-15 -2.700e-02 0.978491    
+delqmax3     1.177e-16  7.222e-15  1.600e-02 0.986992    
+oreluce     -8.973e-17  4.175e-16 -2.150e-01 0.829814    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 7.695547e-28)
+
+    Null deviance: 2.3182e+05  on 6939  degrees of freedom
+Residual deviance: 5.3245e-24  on 6919  degrees of freedom
+AIC: -413558
+
+Number of Fisher Scoring iterations: 1
+
+
